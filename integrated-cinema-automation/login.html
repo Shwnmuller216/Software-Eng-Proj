@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Movie Login</title>
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<div class="loginPageTitle">
+    <h1>Integrated Cinema Automation</h1>
+</div>
+
+<body>
+    <div class="loginBox">
+        <form class="form" id="login">
+            <h1 class="formTitle">Login</h1>
+            <div class="formMessage formMessageError"></div>
+            <div class="formInputContainer">
+                <input type="text" class="formInput" id="email" name="email" autofocus placeholder="Email">
+                <div class="formInputErrorMessage"></div>
+            </div>
+            <div class="formInputContainer">
+                <input type="password" class="formInput" id="password" name="password" autofocus placeholder="Password">
+                <div class="formInputErrorMessage"></div>
+            </div>
+            <button onclick="userExists()" class="formButton" >Continue</button>
+            <p class="formText">
+                <a href="#" class="formLink">Forgot your password?</a>
+            </p>
+            <p class="formText">
+                <a class="formLink" href="./" id="linkCreateAccount">Don't have an account? Create account</a>
+            </p>
+        </form>
+        <form class="form formHidden" id="createAccount">
+            <h1 class="formTitle">Create Account</h1>
+            <div class="formMessage formMessageError"></div>
+            <div class="formInputContainer">
+                <input type="text" class="formInput" id="newEmail" name="newEmail" autofocus placeholder="Email Address">
+                <div class="formInputErrorMessage"></div>
+            </div>
+            <div class="formInputGroup">
+                <input type="password" class="formInput" id="newPassword" name="newPassword" autofocus placeholder="Password">
+                <div class="formInputErrorMessage"></div>
+            </div>
+            <div class="formInputGroup">
+                <input type="password" class="formInput" autofocus placeholder="Confirm password">
+                <div class="formInputErrorMessage"></div>
+            </div>
+            <button class="formButton" type="submit">Continue</button>
+            <p class="formText">
+                <a class="formLink" href="./" id="linkLogin">Already have an account? Sign in</a>
+            </p>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
